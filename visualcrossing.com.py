@@ -28,7 +28,7 @@ def extract(**kwargs):
 
     id = uuid4()
 
-    key = os.environ["VISUAL_CROSSING_API"]
+    # key = os.environ["VISUAL_CROSSING_API"]
     url = f"https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/{config.location}/{config.date1.date().isoformat()}/?unitGroup=metric&include=days&key={config.key}&contentType=csv"
 
     res = requests.get(url)
